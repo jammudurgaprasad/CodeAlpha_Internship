@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .gallery-container {
+            position: relative;
+            width: 600px;
+        }
+
+        .main-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 60px;
+            margin: 0 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            transition: border 0.3s;
+        }
+
+        .thumbnail:hover {
+            border: 2px solid #007bff;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="main-image">
+            <img id="currentImage" src="image1.png" alt="Gallery Image">
+        </div>
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="image1.png" alt="Image 1" onclick="changeImage('image1.png')">
+            <img class="thumbnail" src="image2.png" alt="Image 2" onclick="changeImage('image2.png')">
+            <img class="thumbnail" src="image3.png" alt="Image 3" onclick="changeImage('image3.png')">
+            <img class="thumbnail" src="image4.png" alt="Image 4" onclick="changeImage('image4.png')">
+        </div>
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <script>
+        const images = [
+            'image1.png',
+            'image2.png',
+            'image3.png',
+            'image4.png'
+        ];
+
+        let currentIndex = 0;
+
+        function changeImage(image) {
+            document.getElementById('currentImage').src = image;
+            currentIndex = images.indexOf(image);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            document.getElementById('currentImage').src = images[currentIndex];
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            document.getElementById('currentImage').src = images[currentIndex];
+        }
+    </script>
+</body>
+</html>

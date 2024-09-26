@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>jammudurgaprasad</title>
+        <style>
+            body{
+                background-color: rgb(54, 52, 52);
+                padding: 0;
+                margin: 0;
+            }
+            .d1{
+                color: aliceblue;
+                height: 60px;
+                width: 100%;
+                background-color: rgb(54, 52, 52);
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+            h1{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-left: 30px;
+                font-size: 30px;
+            }
+            button{
+                color: aliceblue;
+                padding: 0;
+                margin: 0;
+                border: none;
+                border-radius: 5px;
+                height: 30px;
+                width: 90px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15px;
+                background-color: rgb(54, 52, 52);
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .d11{
+                position: relative;
+                left: 40px;
+            }
+            .d12{
+                position: relative;
+                left: 570px;
+                display: flex;
+                align-items: center;
+            }
+            button:hover{
+                border: 1px solid aliceblue;
+            }
+            #btnn2{
+                background-color: rgb(112, 107, 107);
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            #img1{
+                background-color: aliceblue;
+                border-radius: 8px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            #img2{
+                background-color: aliceblue;
+                border-radius: 55%;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .d2{
+                display: flex;
+                flex-direction: row;
+            }
+            .d21,.d22{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 80vh;
+            }
+            #myimg{
+                height: 500px;
+                width: 500px;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d1"><h1><a style="color: yellow;text-decoration: none;" href="index.html">DURGA PRASAD</a></h1>
+            <div class="d11">
+                <button id="btn1" onclick="about()">About</button>
+                <button id="btn2" onclick="media()">Media</button>
+                <button id="btn3" onclick="projects()">Projects</button>
+                <button id="btn4" onclick="contact()">Contact</button>
+            </div>
+            <div class="d12">
+                <a href="https://www.linkedin.com/in/durga-prasad-10541a26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img  id="img1" src="icons8-linkedin-50.png" style="width: 35px;height: 35px;"></a>
+                <a href="https://github.com/jammudurgaprasad"><img  id="img2" src="icons8-github-64.png" style="width: 35px;height: 35px;"></a>
+                <button id="btnn2" onclick="resume()" style="color: yellow;">Resume</button>
+            </div>
+        </div>
+        <div class="d2">
+            <div class="d21"><img id="myimg" src="myphoto.jpg"></div>
+            <div class="d22"><p id="info"><h1 id="welcome" style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Step into my digital sanctuary, where innovation meets creativity. Together, let's navigate through a world of endless possibilities.</h1></p></div>
+        </div>
+        <p class="Copyright" style="text-align: center;color: aliceblue;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">&copy; Copyright 2024. All Rights Reserved.</p>
+        <script>
+            
+            function about(){
+                document.getElementById('info').innerHTML="<h2 style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Schooling</h2><h3 style='color: yellow; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Abhyas English Medium School, Garividi, Vizianagaram District</h3><p style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Completed primary and secondary education with a focus on English language proficiency and holistic development.<p><h2 style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Intermediate Education</h2><h3 style='color: yellow; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Sri Viswa Junior College, Visakhapatnam</h3><p style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Completed Intermediate education with a specialization in Mathematics, Physics, and Chemistry (MPC), laying the groundwork for advanced studies in engineering and scientific disciplines.<p><h2 style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Undergraduate Studies</h2><h3 style='color: yellow; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>RVR and JC College of Engineering, Guntur</h3><p style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Currently pursuing a Bachelor's degree in Computer Science and Engineering (CSE), with a passion for exploring innovative technologies and problem-solving methodologies.<p><p style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Each educational institution has contributed significantly to my academic journey, fostering a strong foundation in both theoretical knowledge and practical application. Through diverse experiences and rigorous coursework, I aim to continue evolving as a competent professional in the field of Computer Science and Engineering.</p>";
+                document.getElementById('btn1').style.border="1px solid yellow";
+                document.getElementById('btn2').style.border = "none";
+                document.getElementById('btn3').style.border = "none";
+                document.getElementById('btn4').style.border = "none";
+
+                document.getElementById('btn1').style.color="yellow";
+                document.getElementById('btn2').style.color = "white";
+                document.getElementById('btn3').style.color = "white";
+                document.getElementById('btn4').style.color = "white";
+
+                document.getElementById('welcome').style.display="none";
+            }
+            function media(){
+                document.getElementById('btn1').style.border = "none";
+                document.getElementById('btn2').style.border="1px solid yellow";
+                document.getElementById('btn3').style.border = "none";
+                document.getElementById('btn4').style.border = "none";
+                document.getElementById('info').innerHTML="<div style='display:flex;align-items:center;justify-content:center;flex-direction:column;'><a href='https://www.instagram.com/durgaprasadjammu?igsh=cnc3aThtM20zeXZk'><img style='width:250px;height:50px;margin:10px;' src='Instagram.jpg'></a><a href='https://www.facebook.com/share/FsxMoRNTgPnvFTbW/?mibextid=qi2Omg'><img style='width:250px;height:50px;margin:10px;' src='Facebook.jpg'></a><a href='https://x.com/j_durga_prasad?t=Ka7ujR_ey4zscb8tlZIBYA&s=09'><img style='width:250px;height:50px;margin:10px;' src='Twitter.jpg'></a><a href=''><img style='width:250px;height:50px;margin:10px;' src='Telegram.jpg'></a><a href='https://youtube.com/@durgaprasadjammu?si=3-Bco4O7fUb-QUiG'><img style='width:250px;height:50px;margin:10px;' src='YouTube.jpg'></a></div>";
+                
+                document.getElementById('btn1').style.color = "white";
+                document.getElementById('btn2').style.color="yellow";
+                document.getElementById('btn3').style.color = "white";
+                document.getElementById('btn4').style.color = "white";
+
+                document.getElementById('welcome').style.display="none";
+            }
+            function projects(){
+                document.getElementById('btn1').style.border = "none";
+                document.getElementById('btn2').style.border = "none";
+                document.getElementById('btn3').style.border="1px solid yellow";
+
+                document.getElementById('btn4').style.border = "none";
+                document.getElementById('info').innerHTML="<div style='display: flex;flex-direction: column;align-items: center;justify-content: center;background-color: rgb(62, 61, 61);'><h1 style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Projects</h1><button style='height: 50px;width: 500px;margin: 20px;background-color: yellow;'><a href=\"bill.html\" target=\"_blank\" style='text-decoration: none;font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;'>BILL GENERATOR</a></button><button style='height: 50px;width: 500px;margin: 20px;background-color: yellow;'><a href=\"calculator.html\" target=\"_blank\" style='text-decoration: none;font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;'>CALCULATOR</a></button><button style='height: 50px;width: 500px;margin: 20px;background-color: yellow;'><a href=\"form.html\" target=\"_blank\" style='text-decoration: none;font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;'>LOGIN FORM</a></button></div>";
+
+                document.getElementById('btn1').style.color = "white";
+                document.getElementById('btn2').style.color = "white";
+                document.getElementById('btn3').style.color="yellow";
+                document.getElementById('btn4').style.color = "white";
+
+                document.getElementById('welcome').style.display="none";
+               }
+            function contact(){
+                document.getElementById('btn1').style.border = "none";
+                document.getElementById('btn2').style.border = "none";
+                document.getElementById('btn3').style.border = "none";
+                document.getElementById('btn4').style.border="1px solid yellow";
+                document.getElementById('info').innerHTML="<h2 style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;'>Contact me</h2><h4 style='color: white; font-family: \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;color:yellow;'>jammudurgaprasad04@gmail.com</h4>";
+
+                document.getElementById('btn1').style.color = "white";
+                document.getElementById('btn2').style.color = "white";
+                document.getElementById('btn3').style.color = "white";
+                document.getElementById('btn4').style.color ="yellow";
+
+                document.getElementById('welcome').style.display="none";
+            }
+            function resume(){
+                window.location.href = "Durgaprasad resume.pdf";
+            }
+        </script>
+    </body>
+</html>
